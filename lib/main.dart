@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/pages/HomePage.dart';
+import 'package:myapp/pages/home_page.dart';
 
 /// Flutter code sample for [BottomNavigationBar].
 
@@ -53,9 +53,8 @@ class _BottomNavigationBarExampleState
       appBar: AppBar(
         title: const Text(''),
       ),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+      body: Container(
+          color: Colors.blue, child: _widgetOptions.elementAt(_selectedIndex)),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
