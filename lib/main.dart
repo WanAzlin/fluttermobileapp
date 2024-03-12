@@ -53,8 +53,13 @@ class _BottomNavigationBarExampleState
       appBar: AppBar(
         title: const Text(''),
       ),
-      body: Container(
-          color: Colors.blue, child: _widgetOptions.elementAt(_selectedIndex)),
+      body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
+        scrollDirection: Axis.vertical,
+        child: Container(
+          child: _widgetOptions.elementAt(_selectedIndex),
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
