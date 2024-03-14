@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class ImageCategoryCard extends StatelessWidget {
   const ImageCategoryCard(
-      {super.key, this.image, required this.title, required this.description});
+      {super.key,
+      this.image,
+      required this.title,
+      required this.description,
+      required this.price,
+      required this.onAddToCart});
 
   final Image? image;
   final String title;
   final String description;
+  final double price;
+  final Function onAddToCart;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -33,9 +41,31 @@ class ImageCategoryCard extends StatelessWidget {
           title,
           style: const TextStyle(
             color: Colors.black,
-            fontSize: 10,
+            fontSize: 15.0,
           ),
         ),
+        Text(
+          description,
+          style: const TextStyle(color: Colors.black, fontSize: 10.0),
+        ),
+        Row(children: [
+          Text(
+            price.toString(),
+            style: const TextStyle(
+              color: Colors.black,
+              fontSize: 15.0,
+            ),
+          ),
+          TextButton(
+            child: Icon(Icons.add),
+            onPressed: onAddToCart(),
+          )
+          // TextButton.icon(
+          //   onPressed: onAddToCart(),
+          //   icon: const Icon(Icons.add),
+          //   label: const Text('test'),
+          // )
+        ])
       ],
     );
   }

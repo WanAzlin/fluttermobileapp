@@ -70,8 +70,30 @@ class HomePage extends StatelessWidget {
           categories: [
             ImageCategoryCard(
               image: Image.asset('images/1.png'),
-              description: 'test',
-              title: 'test',
+              title: 'Minyak Saji 1KG',
+              description: '220 ml',
+              price: 19.9,
+              onAddToCart: () {
+                print('Minyak Saji 1KG');
+              },
+            ),
+            ImageCategoryCard(
+              image: Image.asset('images/1.png'),
+              title: 'Paparich White Coffee',
+              description: '20 Sticks Per Pack',
+              price: 19.9,
+              onAddToCart: () {
+                print('Minyak Saji 1KG');
+              },
+            ),
+            ImageCategoryCard(
+              image: Image.asset('images/1.png'),
+              title: 'Maggie Kari ',
+              description: '5+1 Packs',
+              price: 19.9,
+              onAddToCart: () {
+                print('Minyak Saji 1KG');
+              },
             ),
           ],
         ),

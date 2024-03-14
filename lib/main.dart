@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/pages/home_page.dart';
+import 'package:myapp/pages/test_login_page.dart';
 
 /// Flutter code sample for [BottomNavigationBar].
 
@@ -11,7 +12,8 @@ class BottomNavigationBarExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: BottomNavigationBarExample(),
+      // home: BottomNavigationBarExample(),
+      home: TestLoginPage(),
     );
   }
 }
