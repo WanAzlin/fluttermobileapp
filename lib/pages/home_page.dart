@@ -51,14 +51,18 @@ class HomePage extends StatelessWidget {
             CategoryCard(
               title: "Vegitable",
               description: "hot Item",
-              image: Image.asset('images/1.png'),
+              image: Image.asset('images/sayur.png'),
             ),
             CategoryCard(
               title: "Fruits",
               description: "Sale Promotion",
-              image: Image.asset('images/1.png'),
+              image: Image.asset('images/fruit.png'),
             ),
-            const CategoryCard(title: "Card 3"),
+            CategoryCard(
+              title: "Meats",
+              description: "hot Item",
+              image: Image.asset('images/fruit.png'),
+            ),
             const CategoryCard(title: "Card 4"),
           ],
         ),

@@ -12,8 +12,8 @@ class BottomNavigationBarExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      // home: BottomNavigationBarExample(),
-      home: TestLoginPage(),
+      home: BottomNavigationBarExample(),
+      //home: TestLoginPage(),
     );
   }
 }

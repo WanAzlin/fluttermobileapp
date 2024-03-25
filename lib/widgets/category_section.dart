@@ -14,7 +14,7 @@ class CategorySection extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(color: Colors.black, fontSize: 30),
+            style: const TextStyle(color: Colors.black, fontSize: 20),
           ),
           const TextButton(
             onPressed: null,
